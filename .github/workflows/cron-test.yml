@@ -2,8 +2,8 @@ name: learn-github-cron
 run-name: ${{ github.actor }} is using GitHub Actions Cron
 on:
     workflow_dispatch:
-    schedule:
-        - cron: '*/2 * * * *'
+    # schedule:
+        # - cron: '*/2 * * * *'
 jobs:
     test-cron:
         name: Testing Cron on GitHub

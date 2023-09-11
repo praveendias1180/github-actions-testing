@@ -1,9 +1,10 @@
 name: on-other-event
 run-name: Other Events Testing in progress...
-on:
-    push:
-        branches:
-            - main
+# on:
+#     push:
+#         branches:
+#             - main
+on: workflow_dispatch
 jobs:
     print_context:
         runs-on: ubuntu-latest
