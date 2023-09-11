@@ -1,0 +1,15 @@
+name: learn-github-cron
+run-name: ${{ github.actor }} is using GitHub Actions Cron
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: '2 * * * *'
+jobs:
+    test-cron:
+        name: Testing Cron on GitHub
+        runs-on: ubuntu-latest
+        steps:
+            - name: Setup Node
+              uses: actions/setup-node@v2
+              with:
+                node-version: 18
