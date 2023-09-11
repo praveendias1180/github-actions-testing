@@ -5,6 +5,7 @@ jobs:
   check-hello-dir:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Run hello script
         run: ./.github/scripts/hello.sh
         shell: bash
