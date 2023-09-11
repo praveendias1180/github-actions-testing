@@ -9,3 +9,5 @@ jobs:
       - name: Run hello script
         run: ./.github/scripts/hello.sh
         shell: bash
+        env:
+          NAME: Praveen
