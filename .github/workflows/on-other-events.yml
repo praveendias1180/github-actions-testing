@@ -1,0 +1,15 @@
+name: on-other-event
+run-name: Other Events Testing in progress...
+on:
+    push:
+        branches:
+            - main
+jobs:
+    print_context:
+        runs-on: ubuntu-latest
+        name: printing event context
+        steps:
+            - env:
+                EVENT_CONTEXT: ${{ toJSON(github.event) }}
+              run: |
+                echo $EVENT_CONTEXT
